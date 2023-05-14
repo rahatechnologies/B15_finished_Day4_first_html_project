@@ -1,1 +1,1 @@
-# B15_finished_Day4_first_html_project
+# Batch15_HTML_Day1_first_project_artifacts
