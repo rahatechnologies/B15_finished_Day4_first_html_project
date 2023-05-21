@@ -8,6 +8,8 @@
 
     <script src="script.js"></script>
     <script src="./aframe.js"></script>
+    <script src="./virtual.js"></script>
+    
 </head>
 <body>
     <h1>Travel log</h1>
@@ -26,7 +28,7 @@
      
 
     </a-scene> -->
-    <a-scene
+    <!-- <a-scene
     embedded
     style="width: 100%; height: 300px"
     device-orientation-permission-ui="enabled: true"
@@ -35,15 +37,76 @@
     <a-sky src="./hugo-fergusson-xtQidmET07w-unsplash.jpg"></a-sky>
    
 
-  </a-scene>
-  <!-- <a-scene
+  </a-scene> -->
+  <a-scene
   embedded
   style="width: 100%; height: 300px"
   device-orientation-permission-ui="enabled: true"
 >
-  <a-sky src="./huy-peach-dLkyhhC-e6Y-unsplash.jpg"></a-sky>
 
-</a-scene> -->
+  <!-- <a-sky src="./hugo-fergusson-xtQidmET07w-unsplash.jpg" ></a-sky> -->
+
+  <a-sky src="./huy-peach-dLkyhhC-e6Y-unsplash.jpg" ></a-sky>
+</a-scene>
+<!-- 
+<a-assets>
+    <a-asset-item id="target-file-one" src="./huy-peach-dLkyhhC-e6Y-unsplash.jpg"/>
+    <a-asset-item id="target-file-two" src="./pano.jpg"/>
+</a-assets>
+<a-entity zappar-image="target: #target-file-one" id="image-group-one">
+    PLACE 3D OBJECTS HERE TO TRACK FROM THE CENTER OF THE IMAGE -->
+    <!-- <a-box position="0 0 0.5"></a-box>
+</a-entity>
+
+Target File Two -->
+<!-- <a-entity zappar-image="target: #target-file-two" id="image-group-two">
+  PLACE 3D OBJECTS HERE TO TRACK FROM THE CENTER OF THE IMAGE -->
+   <!-- <a-sphere position="0 0 0.5"></a-sphere>
+</a-entity> -->
+
+<!-- <a-scene>
+    <a-assets>
+      <audio id="click-sound" src="https://cdn.aframe.io/360-image-gallery-boilerplate/audio/click.ogg"></audio> -->
+  
+      <!-- Images. -->
+      <!-- <img id="city" src="https://cdn.aframe.io/360-image-gallery-boilerplate/img/city.jpg">
+      <img id="city-thumb" src="https://cdn.aframe.io/360-image-gallery-boilerplate/img/thumb-city.jpg">
+      <img id="cubes" src="https://cdn.aframe.io/360-image-gallery-boilerplate/img/cubes.jpg">
+      <img id="cubes-thumb" src="https://cdn.aframe.io/360-image-gallery-boilerplate/img/thumb-cubes.jpg">
+      <img id="sechelt" src="https://cdn.aframe.io/360-image-gallery-boilerplate/img/sechelt.jpg">
+      <img id="sechelt-thumb" src="https://cdn.aframe.io/360-image-gallery-boilerplate/img/thumb-sechelt.jpg">
+    </a-assets> -->
+  
+    <!-- 360-degree image. -->
+    <!-- <a-sky id="image-360" radius="10" src="#city"></a-sky> -->
+  
+    <!-- Link template we will build. -->
+    <!-- <a-entity class="link"></a-entity> -->
+  
+    <!-- Camera + Cursor. -->
+    <!-- <a-camera>
+      <a-cursor
+        id="cursor"
+        animation__click="property: scale; from: 0.1 0.1 0.1; to: 1 1 1; easing: easeInCubic; dur: 150; startEvents: click"
+        animation__clickreset="property: scale; to: 0.1 0.1 0.1; dur: 1; startEvents: animationcomplete__click"
+        animation__fusing="property: scale; from: 1 1 1; to: 0.1 0.1 0.1; easing: easeInCubic; dur: 150; startEvents: fusing"></a-cursor>
+    </a-camera>
+  </a-scene> -->
+
+  <a-scene>
+    <a-assets>
+        <img id="play" alt="play" src="photos/play-button-arrowhead.png">
+<img id="pause" alt="pause" src="photos/pause.png" >
+        <video id="surfer" src="./pexels-be-the-observer-5402769-3840x2160-30fps.mp4" autoplay controls></video>
+    </a-assets>
+    <a-camera>
+        <a-cursor></a-cursor>
+    </a-camera> 
+    <!-- <a-video src="#surfer" width="8" height="4.5" position="0 3 -9"></a-video> -->
+    <a-image id="videoControl" src="#play" position="0 -3 0" scale="0.5 0.5 1"></a-image>
+  <a-videosphere src="#surfer" rotation="0 -90 0"></a-videosphere>
+  <!-- <a-image id="videoControls" src="#play" position="0 1 -2"></a-image> -->
+  </a-scene>
     <ul>
         <li>India</li>
         <li>Japan</li>
