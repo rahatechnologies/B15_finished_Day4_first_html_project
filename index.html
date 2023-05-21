@@ -7,9 +7,43 @@
     <title>Document</title>
 
     <script src="script.js"></script>
+    <script src="./aframe.js"></script>
 </head>
 <body>
     <h1>Travel log</h1>
+    <h2>360 vr panorama view</h2>
+    <!-- <a-entity material="src:template.png; side: front" mixin="slide" class="intersectable" position="2 1 -3">
+        <a-animation begin="click" attribute="rotation" dur="2000" from="0 0 0" to="0 180 0" fill="forwards"></a-animation>
+        <a-sky src="./huy-peach-dLkyhhC-e6Y-unsplash.jpg"></a-sky>
+    
+    </a-entity> -->
+    <!-- <a-scene
+      embedded
+      style="width: 100%; height: 300px"
+      device-orientation-permission-ui="enabled: true"
+    >
+      <a-sky src="pano.jpg"></a-sky>
+     
+
+    </a-scene> -->
+    <a-scene
+    embedded
+    style="width: 100%; height: 300px"
+    device-orientation-permission-ui="enabled: true"
+  >
+  
+    <a-sky src="./hugo-fergusson-xtQidmET07w-unsplash.jpg"></a-sky>
+   
+
+  </a-scene>
+  <!-- <a-scene
+  embedded
+  style="width: 100%; height: 300px"
+  device-orientation-permission-ui="enabled: true"
+>
+  <a-sky src="./huy-peach-dLkyhhC-e6Y-unsplash.jpg"></a-sky>
+
+</a-scene> -->
     <ul>
         <li>India</li>
         <li>Japan</li>
